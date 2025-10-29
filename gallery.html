@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery | Noah Michelini</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Noah Michelini</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Art Gallery</h2>
+
+    <section class="gallery">
+      <div class="art-item">
+        <img src="images/art1.jpg" alt="Abstract Landscape" data-title="Abstract Landscape" data-description="A digital interpretation of flowing mountain forms.">
+        <div class="overlay">
+          <h3>Abstract Landscape</h3>
+          <p>A digital interpretation of flowing mountain forms.</p>
+        </div>
+      </div>
+
+      <div class="art-item">
+        <img src="images/art2.jpg" alt="Golden Hour" data-title="Golden Hour" data-description="Oil on canvas capturing warm sunset tones.">
+        <div class="overlay">
+          <h3>Golden Hour</h3>
+          <p>Oil on canvas capturing warm sunset tones.</p>
+        </div>
+      </div>
+
+      <div class="art-item">
+        <img src="images/art3.jpg" alt="Reflections" data-title="Reflections" data-description="Watercolor experiment with mirror symmetry.">
+        <div class="overlay">
+          <h3>Reflections</h3>
+          <p>Watercolor experiment with mirror symmetry.</p>
+        </div>
+      </div>
+
+      <div class="art-item">
+        <img src="images/art4.jpg" alt="The City at Dusk" data-title="The City at Dusk" data-description="Digital cityscape inspired by moody cyberpunk tones.">
+        <div class="overlay">
+          <h3>The City at Dusk</h3>
+          <p>Digital cityscape inspired by moody cyberpunk tones.</p>
+        </div>
+      </div>
+
+      <div class="art-item">
+        <img src="images/art5.jpg" alt="Bloom" data-title="Bloom" data-description="Mixed media piece exploring organic patterns.">
+        <div class="overlay">
+          <h3>Bloom</h3>
+          <p>Mixed media piece exploring organic patterns.</p>
+        </div>
+      </div>
+
+      <div class="art-item">
+        <img src="images/art6.jpg" alt="Waves of Light" data-title="Waves of Light" data-description="Abstract lines visualizing motion and rhythm.">
+        <div class="overlay">
+          <h3>Waves of Light</h3>
+          <p>Abstract lines visualizing motion and rhythm.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Element -->
+  <div class="lightbox" id="lightbox">
+    <button class="close">&times;</button>
+    <button class="prev">&#10094;</button>
+    <img src="" alt="Expanded artwork">
+    <button class="next">&#10095;</button>
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Noah Michelini — All rights reserved.</p>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
