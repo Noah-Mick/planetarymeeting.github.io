@@ -1,0 +1,11 @@
+node_modules/
+
+# Sketchbook originals from the earlier attempt at this project that are not
+# published on the site. Kept locally so nothing was thrown away — move a file
+# into images/sketchbook/ and add a row to js/artwork.js to publish it.
+# NOTE: these are not backed up by git. Keep your own copies.
+images/_unpublished/
+
+# OS cruft
+Thumbs.db
+.DS_Store

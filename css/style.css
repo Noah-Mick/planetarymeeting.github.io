@@ -1,41 +1,503 @@
-* {
+/* ==========================================================================
+   Planetary Meeting
+   Palette and type are lifted from the original WordPress theme so the site
+   reads the same after the move:
+     ink   #4b2639  body copy
+     rose  #b26d78  navigation
+     clay  #a0917a  in-copy links
+   Font is Spline Sans Mono, same as before, loaded from Google Fonts.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;700&display=swap');
+
+:root {
+  --ink: #4b2639;
+  --rose: #b26d78;
+  --clay: #a0917a;
+  --bg: #ffffff;
+  --rule: #ece5e7;
+
+  --measure: 62ch;        /* comfortable reading width for prose */
+  --page: 1265px;         /* content width on the original site */
+  --gap: 1.75rem;         /* gutter between gallery tiles */
+
+  --step: clamp(1rem, 0.9rem + 0.45vw, 1.3125rem);  /* 16px -> 21px */
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #111;
-  color: #eee;
+  font-family: 'Spline Sans Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--step);
   line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-header {
-  background: #222;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 a {
-  color: #eee;
+  color: var(--clay);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--ink);
+}
+
+/* Visible keyboard focus everywhere — the original theme had none. */
+:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+}
+
+/* Skip link, hidden until tabbed to. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--ink);
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-a:hover {
-  color: #ff8c00;
+.skip-link:focus {
+  left: 0;
 }
 
-.intro {
-  padding: 3rem 2rem;
+/* --------------------------------------------------------------------------
+   Header: oversized centred logo, navigation beneath it
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  padding: 2rem 1.5rem 0;
   text-align: center;
+}
+
+.masthead__logo {
+  display: inline-block;
+  max-width: 800px;
+  width: 100%;
+}
+
+.masthead__logo img {
+  width: 100%;
+}
+
+.nav {
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 2rem;
+}
+
+.nav__link {
+  color: var(--rose);
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+/* Current page gets a permanent underline. */
+.nav__link[aria-current='page'] {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: var(--page);
+  margin-inline: auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.page-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Prose blocks (About, Store) */
+.prose {
+  max-width: var(--measure);
+}
+
+.prose p + p {
+  margin-top: 1.5em;
+}
+
+.prose h2 {
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+}
+
+/* --------------------------------------------------------------------------
+   Gallery — masonry via CSS columns.
+   Every tile carries an explicit aspect-ratio (baked into js/artwork.js by
+   scripts/optimize-images.js) so lazy-loaded images reserve their space and
+   the columns never reflow as you scroll.
+   -------------------------------------------------------------------------- */
+
+.gallery {
+  columns: 3;
+  column-gap: var(--gap);
+}
+
+@media (max-width: 900px) {
+  .gallery { columns: 2; }
+}
+
+@media (max-width: 560px) {
+  .gallery { columns: 1; }
+}
+
+.gallery__item {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+  /* Chrome/Safari need this to stop tiles splitting across columns. */
+  display: inline-block;
+  width: 100%;
+}
+
+.gallery__button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  font: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.gallery__button img {
+  width: 100%;
+  background: var(--rule);   /* placeholder tint while the image loads */
+  transition: opacity 0.2s ease;
+}
+
+.gallery__button:hover img,
+.gallery__button:focus-visible img {
+  opacity: 0.82;
+}
+
+/* Caption appears on hover/focus for titled work only. */
+.gallery__caption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #fff;
+  background: linear-gradient(to top, rgba(75, 38, 57, 0.85), rgba(75, 38, 57, 0));
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.gallery__button:hover .gallery__caption,
+.gallery__button:focus-visible .gallery__caption {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   About
+   -------------------------------------------------------------------------- */
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__portrait { max-width: 320px; margin-inline: auto; }
+}
+
+.about__portrait img {
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Contact form
+   -------------------------------------------------------------------------- */
+
+.form {
+  max-width: 34rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.field__label {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.field__hint {
+  font-size: 0.75em;
+  color: var(--clay);
+}
+
+.field input,
+.field textarea {
+  font: inherit;
+  font-size: 0.9em;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--rose);
+  border-radius: 0;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid var(--rose);
+  outline-offset: 1px;
+}
+
+.field textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.field input[type='file'] {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.button {
+  font: inherit;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--rose);
+  border: 1px solid var(--rose);
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  justify-self: start;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+/* Shown by js/contact.js when no form endpoint is configured yet. */
+.form-notice {
+  border: 1px dashed var(--rose);
+  padding: 1rem 1.25rem;
+  font-size: 0.8em;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--rule);
+  padding: 2rem 1.5rem 3rem;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social a {
+  color: var(--rose);
+  text-decoration: none;
+  display: inline-flex;
+  padding: 0.4rem;
+}
+
+.social a:hover,
+.social a:focus-visible {
+  color: var(--ink);
+}
+
+.social svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Lightbox
+   -------------------------------------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.97);
+  padding: 4.5rem 1rem 5rem;
+}
+
+.lightbox[open],
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__figure {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: calc(100vh - 11rem);
+  width: auto;
+  object-fit: contain;
+}
+
+.lightbox__caption {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-align: center;
+  min-height: 1.5em;
+}
+
+.lightbox__btn {
+  position: absolute;
+  font: inherit;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.lightbox__btn:hover,
+.lightbox__btn:focus-visible {
+  color: var(--rose);
+}
+
+.lightbox__btn--close {
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+.lightbox__btn--prev,
+.lightbox__btn--next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+}
+
+.lightbox__btn--prev { left: 0.5rem; }
+.lightbox__btn--next { right: 0.5rem; }
+
+.lightbox__counter {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  color: var(--clay);
+}
+
+/* Stop the page behind the lightbox from scrolling. */
+body.is-locked {
+  overflow: hidden;
+}
+
+/* Screen-reader-only text */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
