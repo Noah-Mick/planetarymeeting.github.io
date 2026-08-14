@@ -399,6 +399,185 @@ a:focus-visible {
 }
 
 /* --------------------------------------------------------------------------
+   Drawer menu
+
+   A second way into the same six pages, always available, for when you've
+   scrolled past the header. The inline navigation under the logo stays exactly
+   as it was — this sits on top of it rather than replacing it.
+   -------------------------------------------------------------------------- */
+
+.nav-toggle {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 40;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+/* Three bars, drawn from one element: the middle bar is the element itself. */
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  position: absolute;
+  left: 50%;
+  width: 1.25rem;
+  height: 1.5px;
+  margin-left: -0.625rem;
+  background: var(--ink);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle__bars {
+  top: 50%;
+  margin-top: -0.75px;
+}
+
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  content: '';
+  margin-left: -0.625rem;
+}
+
+.nav-toggle__bars::before { top: -6px; }
+.nav-toggle__bars::after  { top: 6px; }
+
+/* Open state: bars collapse into an X. */
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 38;
+  background: rgba(75, 38, 57, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s;
+}
+
+.drawer-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 39;
+  width: min(320px, 82vw);
+  padding: 5rem 2rem 2rem;
+  background: var(--bg);
+  border-left: 1px solid var(--rule);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  /* visibility (not just transform) so the links are out of the tab order and
+     invisible to screen readers while the drawer is parked off-screen. */
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.25s ease, visibility 0.25s;
+}
+
+.drawer.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.drawer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.drawer__link {
+  color: var(--rose);
+  letter-spacing: 3px;
+  text-decoration: none;
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.drawer__link:hover,
+.drawer__link:focus-visible,
+.drawer__link[aria-current='page'] {
+  color: var(--ink);
+}
+
+/* The social list is cloned into the drawer by js/nav.js. */
+.drawer .social {
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* --------------------------------------------------------------------------
+   Back to top
+   -------------------------------------------------------------------------- */
+
+.to-top {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 30;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  font: inherit;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.to-top:hover,
+.to-top:focus-visible {
+  color: var(--bg);
+  background: var(--rose);
+  border-color: var(--rose);
+}
+
+/* Don't cover the lightbox controls. */
+body.is-locked .to-top {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* --------------------------------------------------------------------------
    Lightbox
    -------------------------------------------------------------------------- */
 
