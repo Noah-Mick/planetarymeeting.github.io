@@ -4,9 +4,10 @@
   "description": "Planetary Meeting — art portfolio for Livia Burkhardt. Static site, no build step required to view.",
   "private": true,
   "scripts": {
-    "images": "node scripts/optimize-images.js",
-    "import": "node scripts/download-images.js",
-    "serve": "node scripts/serve.js"
+    "serve": "node scripts/serve.js",
+    "build": "node scripts/build-gallery.js",
+    "sync": "node scripts/sync-dropbox.js",
+    "auth": "node scripts/dropbox-auth.js"
   },
   "devDependencies": {
     "sharp": "^0.33.5"

@@ -1,0 +1,105 @@
+name: Publish artwork
+
+# Pulls new work from Dropbox, rebuilds the galleries, and commits the result.
+# Committing to main is what makes GitHub Pages redeploy.
+#
+# Triggers are deliberately limited to schedule / manual / push-to-main. In
+# particular there is no pull_request trigger: secrets are withheld from fork
+# PRs by GitHub, and not offering the trigger at all keeps it that way.
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub runs scheduled jobs on a best-effort basis, so
+    # treat this as "about every quarter hour", not to the second.
+    - cron: '*/15 * * * *'
+
+  workflow_dispatch:
+    inputs:
+      confirm_deletions:
+        description: 'Allow removing more pieces than the failsafe permits'
+        required: false
+        default: 'no'
+        type: choice
+        options: ['no', 'yes']
+      force_rebuild:
+        description: 'Rebuild every derivative from scratch'
+        required: false
+        default: 'no'
+        type: choice
+        options: ['no', 'yes']
+
+  # The fallback path: images dragged into images/inbox/<Group>/ on github.com.
+  #
+  # This does not loop. Commits pushed with GITHUB_TOKEN deliberately do not
+  # trigger further workflow runs, so the job's own commit is a dead end.
+  push:
+    branches: [main]
+    paths:
+      - 'images/inbox/**'
+      - 'data/gallery-state.json'
+
+# Only one publish at a time; a queued run would race on the same commit.
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      # Downloaded originals are not committed, so cache them between runs.
+      # Without this every run re-downloads the whole folder from Dropbox.
+      - name: Restore original-image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/originals
+          key: originals-${{ hashFiles('data/gallery-state.json') }}
+          restore-keys: originals-
+
+      - name: Sync from Dropbox
+        # Skipped on push runs: those are the GitHub-upload fallback, where the
+        # repo is ahead of Dropbox and syncing would immediately undo the edit.
+        if: github.event_name != 'push'
+        env:
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+        run: |
+          node scripts/sync-dropbox.js \
+            ${{ inputs.confirm_deletions == 'yes' && '--confirm-deletions' || '' }}
+
+      - name: Build galleries
+        run: |
+          node scripts/build-gallery.js --adopt \
+            ${{ inputs.force_rebuild == 'yes' && '--force' || '' }}
+
+      - name: Commit
+        run: |
+          git config user.name  "planetary-meeting-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A images js/artwork.js data/gallery-state.json
+
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+
+          git diff --staged --stat
+          git commit -m "Publish artwork updates
+
+          Automated by .github/workflows/publish.yml"
+          git push

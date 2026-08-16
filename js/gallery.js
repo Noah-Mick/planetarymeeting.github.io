@@ -5,15 +5,27 @@
  *   <div class="gallery" data-gallery="illustration"></div>
  * and the shared lightbox markup (see any gallery page).
  *
- * If scripts/optimize-images.js has been run, js/image-sizes.js exists and
- * supplies natural dimensions plus a signal that WebP thumbnails are available.
- * Without it the gallery still works, it just serves the full-size originals.
+ * Both image sizes are WebP built by scripts/build-gallery.js: a 900px
+ * thumbnail for the grid and a 2000px copy for the lightbox. Full-resolution
+ * originals are not served to visitors — they live in Dropbox.
  */
 (function () {
   'use strict';
 
   var ARTWORK = window.ARTWORK || {};
-  var SIZES = window.IMAGE_SIZES || {};
+
+  /**
+   * Every image URL on the site is built here.
+   *
+   * If the images ever move off the repo onto a CDN or object store, this is
+   * the only function that needs to change — set BASE to the new origin and
+   * everything follows.
+   */
+  var BASE = 'images/';
+
+  function imageUrl(section, slug, size) {
+    return BASE + section + '/' + size + '/' + encodeURIComponent(slug) + '.webp';
+  }
 
   /**
    * Sketchbook pieces that were never named carry their camera filename
@@ -26,15 +38,6 @@
 
   function displayTitle(entry) {
     return isUntitled(entry.title) ? '' : entry.title;
-  }
-
-  /** images/illustration/Snow-Dogs.png -> images/illustration/thumb/Snow-Dogs.webp */
-  function thumbPath(section, file) {
-    return 'images/' + section + '/thumb/' + file.replace(/\.[^.]+$/, '') + '.webp';
-  }
-
-  function fullPath(section, file) {
-    return 'images/' + section + '/' + file;
   }
 
   function buildItem(section, entry, index) {
@@ -50,22 +53,18 @@
     button.setAttribute('aria-label', 'View ' + (title || 'sketchbook page') + ' larger');
 
     var img = document.createElement('img');
-    var dims = SIZES[section + '/' + entry.file];
-
-    if (dims) {
-      // Thumbnails exist. Reserve the exact box so lazy loading can't reflow
-      // the masonry columns underneath the reader.
-      img.src = thumbPath(section, entry.file);
-      img.width = dims[0];
-      img.height = dims[1];
-      img.style.aspectRatio = dims[0] + ' / ' + dims[1];
-    } else {
-      img.src = fullPath(section, entry.file);
-    }
-
+    img.src = imageUrl(section, entry.slug, 'thumb');
     img.alt = title || 'Sketchbook page';
     img.loading = 'lazy';
     img.decoding = 'async';
+
+    // Reserve the exact box so lazy loading can't reflow the masonry columns
+    // underneath the reader.
+    if (entry.w && entry.h) {
+      img.width = entry.w;
+      img.height = entry.h;
+      img.style.aspectRatio = entry.w + ' / ' + entry.h;
+    }
 
     button.appendChild(img);
 
@@ -115,8 +114,7 @@
       var entry = entries[current];
       var title = displayTitle(entry);
 
-      // The lightbox always gets the full-resolution original.
-      img.src = fullPath(section, entry.file);
+      img.src = imageUrl(section, entry.slug, 'web');
       img.alt = title || 'Sketchbook page';
       caption.textContent = title;
       counter.textContent = current + 1 + ' / ' + entries.length;

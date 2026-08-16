@@ -1,8 +1,13 @@
 node_modules/
 
+# Originals downloaded from Dropbox. Rebuildable at any time by re-running the
+# sync, so there is no reason to commit them — the committed WebP derivatives
+# are what the site actually serves.
+.cache/
+
 # Sketchbook originals from the earlier attempt at this project that are not
 # published on the site. Kept locally so nothing was thrown away — move a file
-# into images/sketchbook/ and add a row to js/artwork.js to publish it.
+# into images/inbox/Sketchbook/ to publish it, or add it to Dropbox.
 # NOTE: these are not backed up by git. Keep your own copies.
 images/_unpublished/
 

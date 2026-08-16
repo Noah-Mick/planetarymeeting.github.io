@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-14T18:08:09.358Z",
+  "files": {
+    "local:illustration/A-Day-Spent-Outside.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/A-Day-Spent-Outside.png",
+      "ext": ".png",
+      "title": "A Day Spent Outside",
+      "order": 1,
+      "modified": "2026-08-14T13:36:06.189Z"
+    },
+    "local:illustration/Another-Jar-for-my-Things.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Another-Jar-for-my-Things.png",
+      "ext": ".png",
+      "title": "Another Jar for my Things",
+      "order": 17,
+      "modified": "2026-08-14T13:36:10.311Z"
+    },
+    "local:illustration/CYCLOPS-RED.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/CYCLOPS-RED.png",
+      "ext": ".png",
+      "title": "CYCLOPS RED",
+      "order": 10,
+      "modified": "2026-08-14T13:36:08.523Z"
+    },
+    "local:illustration/CYCLOPS-ROSE.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/CYCLOPS-ROSE.png",
+      "ext": ".png",
+      "title": "CYCLOPS ROSÈ",
+      "order": 8,
+      "modified": "2026-08-14T13:36:08.376Z"
+    },
+    "local:illustration/CYCLOPS-WHITE.jpg": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/CYCLOPS-WHITE.jpg",
+      "ext": ".jpg",
+      "title": "CYCLOPS WHITE",
+      "order": 9,
+      "modified": "2026-08-14T13:36:08.471Z"
+    },
+    "local:illustration/For-What-Its-Worth.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/For-What-Its-Worth.png",
+      "ext": ".png",
+      "title": "For What It's Worth",
+      "order": 6,
+      "modified": "2026-08-14T13:36:07.975Z"
+    },
+    "local:illustration/Heinz-Endelmann-Inspired-Tame-Impala-Poster.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Heinz-Endelmann-Inspired-Tame-Impala-Poster.png",
+      "ext": ".png",
+      "title": "Heinz Endelmann Inspired Tame Impala Poster",
+      "order": 16,
+      "modified": "2026-08-14T13:36:09.947Z"
+    },
+    "local:illustration/In-a-Forest.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/In-a-Forest.png",
+      "ext": ".png",
+      "title": "In a Forest",
+      "order": 5,
+      "modified": "2026-08-14T13:36:07.737Z"
+    },
+    "local:illustration/Java-Burrito-Company-Illustration.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Java-Burrito-Company-Illustration.png",
+      "ext": ".png",
+      "title": "Java Burrito Company Illustration",
+      "order": 14,
+      "modified": "2026-08-14T13:36:09.673Z"
+    },
+    "local:illustration/Mr-Pig-Heads-on-Over-to-the-Sea-Store.jpg": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Mr-Pig-Heads-on-Over-to-the-Sea-Store.jpg",
+      "ext": ".jpg",
+      "title": "Mr. Pig Heads on Over to the Sea Store",
+      "order": 18,
+      "modified": "2026-08-14T13:36:10.418Z"
+    },
+    "local:illustration/Snow-Dogs.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Snow-Dogs.png",
+      "ext": ".png",
+      "title": "Snow Dogs",
+      "order": 4,
+      "modified": "2026-08-14T13:36:07.355Z"
+    },
+    "local:illustration/The-Alchemist-Book-Cover-Mockup.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/The-Alchemist-Book-Cover-Mockup.png",
+      "ext": ".png",
+      "title": "The Alchemist Book Cover Mockup",
+      "order": 15,
+      "modified": "2026-08-14T13:36:09.857Z"
+    },
+    "local:illustration/The-End-Of-Snow-Days.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/The-End-Of-Snow-Days.png",
+      "ext": ".png",
+      "title": "The End Of Snow Days",
+      "order": 11,
+      "modified": "2026-08-14T13:36:08.994Z"
+    },
+    "local:illustration/The-Library-Bathroom-Double-Page-Spread.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/The-Library-Bathroom-Double-Page-Spread.png",
+      "ext": ".png",
+      "title": "The Library Bathroom Double Page Spread",
+      "order": 13,
+      "modified": "2026-08-14T13:36:09.578Z"
+    },
+    "local:illustration/The-Library-Bathroom.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/The-Library-Bathroom.png",
+      "ext": ".png",
+      "title": "The Library Bathroom",
+      "order": 12,
+      "modified": "2026-08-14T13:36:09.112Z"
+    },
+    "local:illustration/The-Monster-Under-My-Bed.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/The-Monster-Under-My-Bed.png",
+      "ext": ".png",
+      "title": "The Monster Under My Bed",
+      "order": 19,
+      "modified": "2026-08-14T13:36:10.929Z"
+    },
+    "local:illustration/What-More-is-There-to-Do.jpg": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/What-More-is-There-to-Do.jpg",
+      "ext": ".jpg",
+      "title": "What More is There to Do",
+      "order": 2,
+      "modified": "2026-08-14T13:36:06.647Z"
+    },
+    "local:illustration/Whats-in-your-Palette.png": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Whats-in-your-Palette.png",
+      "ext": ".png",
+      "title": "What's in your Palette",
+      "order": 3,
+      "modified": "2026-08-14T13:36:07.197Z"
+    },
+    "local:illustration/Wrapped-in-The-Wave.jpg": {
+      "source": "local",
+      "group": "illustration",
+      "path": "images/illustration/Wrapped-in-The-Wave.jpg",
+      "ext": ".jpg",
+      "title": "Wrapped in The Wave",
+      "order": 7,
+      "modified": "2026-08-14T13:36:08.325Z"
+    },
+    "local:sketchbook/aligator-man.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/aligator-man.png",
+      "ext": ".png",
+      "title": "aligator man",
+      "order": 30,
+      "modified": "2026-08-14T13:36:17.581Z"
+    },
+    "local:sketchbook/cyclops-2.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/cyclops-2.png",
+      "ext": ".png",
+      "title": "cyclops 2",
+      "order": 29,
+      "modified": "2026-08-14T13:36:17.520Z"
+    },
+    "local:sketchbook/Gone-Fishin.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Gone-Fishin.png",
+      "ext": ".png",
+      "title": "Gone FIshin'",
+      "order": 15,
+      "modified": "2026-08-14T13:36:14.567Z"
+    },
+    "local:sketchbook/Head-Split.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Head-Split.png",
+      "ext": ".png",
+      "title": "Head Split",
+      "order": 9,
+      "modified": "2026-08-14T13:36:13.140Z"
+    },
+    "local:sketchbook/Horse.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Horse.png",
+      "ext": ".png",
+      "title": "Horse",
+      "order": 32,
+      "modified": "2025-02-25T00:29:56.309Z"
+    },
+    "local:sketchbook/mind-2.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/mind-2.png",
+      "ext": ".png",
+      "title": "mind 2",
+      "order": 7,
+      "modified": "2026-08-14T13:36:12.701Z"
+    },
+    "local:sketchbook/Mind.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Mind.png",
+      "ext": ".png",
+      "title": "Mind",
+      "order": 8,
+      "modified": "2025-01-20T18:23:46.711Z"
+    },
+    "local:sketchbook/Photo-Aug-02-2024-9-04-06-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Aug-02-2024-9-04-06-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Aug 02 2024, 9 04 06 AM",
+      "order": 3,
+      "modified": "2026-08-14T13:36:11.441Z"
+    },
+    "local:sketchbook/Photo-Dec-07-2024-1-01-35-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-07-2024-1-01-35-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 1 01 35 PM",
+      "order": 12,
+      "modified": "2026-08-14T13:36:13.641Z"
+    },
+    "local:sketchbook/Photo-Dec-07-2024-1-02-14-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-07-2024-1-02-14-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 1 02 14 PM",
+      "order": 11,
+      "modified": "2026-08-14T13:36:13.534Z"
+    },
+    "local:sketchbook/Photo-Dec-07-2024-12-55-07-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-07-2024-12-55-07-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 12 55 07 PM",
+      "order": 18,
+      "modified": "2026-08-14T13:36:15.149Z"
+    },
+    "local:sketchbook/Photo-Dec-07-2024-12-55-34-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-07-2024-12-55-34-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 12 55 34 PM",
+      "order": 4,
+      "modified": "2026-08-14T13:36:11.860Z"
+    },
+    "local:sketchbook/Photo-Dec-11-2024-10-23-46-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-11-2024-10-23-46-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 11 2024, 10 23 46 AM",
+      "order": 5,
+      "modified": "2026-08-14T13:36:11.940Z"
+    },
+    "local:sketchbook/Photo-Dec-11-2024-9-51-31-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-11-2024-9-51-31-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 11 2024, 9 51 31 PM",
+      "order": 14,
+      "modified": "2026-08-14T13:36:14.272Z"
+    },
+    "local:sketchbook/Photo-Dec-29-2024-2-11-52-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Dec-29-2024-2-11-52-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Dec 29 2024, 2 11 52 PM",
+      "order": 10,
+      "modified": "2026-08-14T13:36:13.303Z"
+    },
+    "local:sketchbook/Photo-Feb-11-2025-6-42-30-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Feb-11-2025-6-42-30-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Feb 11 2025, 6 42 30 PM",
+      "order": 17,
+      "modified": "2026-08-14T13:36:15.067Z"
+    },
+    "local:sketchbook/Photo-Feb-24-2025-8-46-23-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Feb-24-2025-8-46-23-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Feb 24 2025, 8 46 23 PM",
+      "order": 31,
+      "modified": "2026-08-14T13:36:17.872Z"
+    },
+    "local:sketchbook/Photo-Jul-15-2024-2-42-11-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-11-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 11 PM",
+      "order": 19,
+      "modified": "2026-08-14T13:36:15.285Z"
+    },
+    "local:sketchbook/Photo-Jul-15-2024-2-42-31-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-31-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 31 PM",
+      "order": 27,
+      "modified": "2026-08-14T13:36:17.291Z"
+    },
+    "local:sketchbook/Photo-Jul-15-2024-2-42-43-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-43-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 43 PM",
+      "order": 13,
+      "modified": "2026-08-14T13:36:14.173Z"
+    },
+    "local:sketchbook/Photo-Jul-31-2023-11-25-32-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jul-31-2023-11-25-32-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jul 31 2023, 11 25 32 AM",
+      "order": 23,
+      "modified": "2026-08-14T13:36:16.320Z"
+    },
+    "local:sketchbook/Photo-Jun-01-2023-5-54-14-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jun-01-2023-5-54-14-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jun 01 2023, 5 54 14 PM",
+      "order": 16,
+      "modified": "2026-08-14T13:36:14.732Z"
+    },
+    "local:sketchbook/Photo-Jun-25-2023-12-20-55-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Jun-25-2023-12-20-55-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Jun 25 2023, 12 20 55 PM",
+      "order": 24,
+      "modified": "2026-08-14T13:36:16.426Z"
+    },
+    "local:sketchbook/Photo-Nov-27-2023-5-38-25-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Nov-27-2023-5-38-25-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Nov 27 2023, 5 38 25 PM",
+      "order": 2,
+      "modified": "2026-08-14T13:36:11.362Z"
+    },
+    "local:sketchbook/Photo-Nov-27-2024-11-59-47-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Nov-27-2024-11-59-47-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Nov 27 2024, 11 59 47 AM",
+      "order": 26,
+      "modified": "2026-08-14T13:36:16.779Z"
+    },
+    "local:sketchbook/Photo-Nov-28-2023-6-55-59-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Nov-28-2023-6-55-59-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Nov 28 2023, 6 55 59 PM",
+      "order": 1,
+      "modified": "2026-08-14T13:36:11.081Z"
+    },
+    "local:sketchbook/Photo-Sep-05-2024-10-25-52-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Sep-05-2024-10-25-52-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Sep 05 2024, 10 25 52 AM",
+      "order": 28,
+      "modified": "2026-08-14T13:36:17.376Z"
+    },
+    "local:sketchbook/Photo-Sep-10-2024-9-20-59-AM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Sep-10-2024-9-20-59-AM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Sep 10 2024, 9 20 59 AM",
+      "order": 21,
+      "modified": "2026-08-14T13:36:15.648Z"
+    },
+    "local:sketchbook/Photo-Sep-12-2023-5-00-36-PM.jpg": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Photo-Sep-12-2023-5-00-36-PM.jpg",
+      "ext": ".jpg",
+      "title": "Photo Sep 12 2023, 5 00 36 PM",
+      "order": 6,
+      "modified": "2026-08-14T13:36:12.583Z"
+    },
+    "local:sketchbook/Self-Portrait.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Self-Portrait.png",
+      "ext": ".png",
+      "title": "Self Portrait",
+      "order": 25,
+      "modified": "2026-08-14T13:36:16.667Z"
+    },
+    "local:sketchbook/Severed-or-Connected.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Severed-or-Connected.png",
+      "ext": ".png",
+      "title": "Severed or Connected",
+      "order": 20,
+      "modified": "2026-08-14T13:36:15.358Z"
+    },
+    "local:sketchbook/Two-People.png": {
+      "source": "local",
+      "group": "sketchbook",
+      "path": "images/sketchbook/Two-People.png",
+      "ext": ".png",
+      "title": "Two People",
+      "order": 22,
+      "modified": "2026-08-14T13:36:15.708Z"
+    },
+    "local:fine-art/aquarius.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/aquarius.png",
+      "ext": ".png",
+      "title": "Aquarius",
+      "order": 2,
+      "modified": "2026-08-14T13:36:18.369Z"
+    },
+    "local:fine-art/Bath-Time.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/Bath-Time.png",
+      "ext": ".png",
+      "title": "Bath Time",
+      "order": 3,
+      "modified": "2026-08-14T13:36:20.219Z"
+    },
+    "local:fine-art/Desires-of-Earth.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/Desires-of-Earth.png",
+      "ext": ".png",
+      "title": "Desires of Earth",
+      "order": 1,
+      "modified": "2026-08-14T13:36:18.002Z"
+    },
+    "local:fine-art/Forsyth-Fountain.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/Forsyth-Fountain.png",
+      "ext": ".png",
+      "title": "Forsyth Fountain",
+      "order": 4,
+      "modified": "2026-08-14T13:36:20.503Z"
+    },
+    "local:fine-art/River-Street.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/River-Street.png",
+      "ext": ".png",
+      "title": "River Street",
+      "order": 5,
+      "modified": "2026-08-14T13:36:20.599Z"
+    },
+    "local:fine-art/SCAD-Theater.png": {
+      "source": "local",
+      "group": "fine-art",
+      "path": "images/fine-art/SCAD-Theater.png",
+      "ext": ".png",
+      "title": "SCAD Theater",
+      "order": 6,
+      "modified": "2026-08-14T13:36:20.729Z"
+    }
+  }
+}

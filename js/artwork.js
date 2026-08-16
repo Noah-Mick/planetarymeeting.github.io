@@ -1,87 +1,78 @@
 /**
- * Single source of truth for every piece on the site.
+ * GENERATED FILE — do not edit by hand.
+ * Written by scripts/build-gallery.js (npm run build).
  *
- * Each entry:
- *   title  - shown in the lightbox caption and used as the img alt text
- *   file   - filename inside images/<section>/
- *   src    - original URL on the WordPress site, kept only so
- *            scripts/download-images.js can re-fetch or update a piece later.
- *            Nothing on the live site reads it.
+ * Every piece on the site, in display order. Each entry carries:
+ *   title  caption text, and the img alt text
+ *   slug   basename of its files under images/<group>/thumb|web/
+ *   w, h   thumbnail dimensions, so tiles reserve their space before the
+ *          lazy-loaded image arrives and the columns never reflow
  *
- * To add a piece: drop the file in the right images/ folder and add a row here.
- * Order in this file is the order it appears in the gallery.
+ * To change what appears here, change the source (Dropbox, or the files
+ * in images/<group>/) and re-run the build. Editing this file does nothing.
  */
 window.ARTWORK = {
-  illustration: [
-    { title: "A Day Spent Outside", file: "A-Day-Spent-Outside.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/A-Day-Spent-Outside.png" },
-    { title: "What More is There to Do", file: "What-More-is-There-to-Do.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/What-More-is-There-to-Do.jpg" },
-    { title: "What's in your Palette", file: "Whats-in-your-Palette.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Whats-in-your-Palette.png" },
-    { title: "Snow Dogs", file: "Snow-Dogs.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Snow-Dogs.png" },
-    { title: "In a Forest", file: "In-a-Forest.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/In-a-Forest.png" },
-    { title: "For What It's Worth", file: "For-What-Its-Worth.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/01/For-What-Its-Worth.png" },
-    { title: "Wrapped in The Wave", file: "Wrapped-in-The-Wave.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2024/12/Wrapped-in-The-Wave.jpg" },
-    { title: "CYCLOPS ROSÈ", file: "CYCLOPS-ROSE.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/CYCLOPS-ROSE.png" },
-    { title: "CYCLOPS WHITE", file: "CYCLOPS-WHITE.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/CYCLOPS-WHITE.jpg" },
-    { title: "CYCLOPS RED", file: "CYCLOPS-RED.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/CYCLOPS-RED.png" },
-    { title: "The End Of Snow Days", file: "The-End-Of-Snow-Days.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/The-End-Of-Snow-Days.png" },
-    { title: "The Library Bathroom", file: "The-Library-Bathroom.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/The-Library-Bathroom-e1740447523851.png" },
-    { title: "The Library Bathroom Double Page Spread", file: "The-Library-Bathroom-Double-Page-Spread.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/The-Library-Bathroom-Double-Page-Spread.png" },
-    { title: "Java Burrito Company Illustration", file: "Java-Burrito-Company-Illustration.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Java-Burrito-Company-Illustration.png" },
-    { title: "The Alchemist Book Cover Mockup", file: "The-Alchemist-Book-Cover-Mockup.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/The-Alchemist-Book-Cover-Mockup.png" },
-    { title: "Heinz Endelmann Inspired Tame Impala Poster", file: "Heinz-Endelmann-Inspired-Tame-Impala-Poster.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Heinz-Endelmann-Inspired-Tame-Impala-Poster.png" },
-    { title: "Another Jar for my Things", file: "Another-Jar-for-my-Things.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Another-Jar-for-my-Things.png" },
-    { title: "Mr. Pig Heads on Over to the Sea Store", file: "Mr-Pig-Heads-on-Over-to-the-Sea-Store.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Mr.-Pig-Heads-on-Over-to-the-Sea-Store.jpg" },
-    { title: "The Monster Under My Bed", file: "The-Monster-Under-My-Bed.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/The-Monster-Under-My-Bed.png" }
+  "illustration": [
+    { title: "A Day Spent Outside", slug: "A-Day-Spent-Outside", w: 900, h: 899 },
+    { title: "What More is There to Do", slug: "What-More-is-There-to-Do", w: 900, h: 1200 },
+    { title: "What's in your Palette", slug: "Whats-in-your-Palette", w: 900, h: 491 },
+    { title: "Snow Dogs", slug: "Snow-Dogs", w: 900, h: 135 },
+    { title: "In a Forest", slug: "In-a-Forest", w: 900, h: 582 },
+    { title: "For What It's Worth", slug: "For-What-Its-Worth", w: 900, h: 1273 },
+    { title: "Wrapped in The Wave", slug: "Wrapped-in-The-Wave", w: 900, h: 900 },
+    { title: "CYCLOPS ROSÈ", slug: "CYCLOPS-ROSE", w: 407, h: 457 },
+    { title: "CYCLOPS WHITE", slug: "CYCLOPS-WHITE", w: 390, h: 422 },
+    { title: "CYCLOPS RED", slug: "CYCLOPS-RED", w: 419, h: 464 },
+    { title: "The End Of Snow Days", slug: "The-End-Of-Snow-Days", w: 702, h: 468 },
+    { title: "The Library Bathroom", slug: "The-Library-Bathroom", w: 900, h: 605 },
+    { title: "The Library Bathroom Double Page Spread", slug: "The-Library-Bathroom-Double-Page-Spread", w: 900, h: 563 },
+    { title: "Java Burrito Company Illustration", slug: "Java-Burrito-Company-Illustration", w: 900, h: 225 },
+    { title: "The Alchemist Book Cover Mockup", slug: "The-Alchemist-Book-Cover-Mockup", w: 900, h: 307 },
+    { title: "Heinz Endelmann Inspired Tame Impala Poster", slug: "Heinz-Endelmann-Inspired-Tame-Impala-Poster", w: 720, h: 960 },
+    { title: "Another Jar for my Things", slug: "Another-Jar-for-my-Things", w: 800, h: 960 },
+    { title: "Mr. Pig Heads on Over to the Sea Store", slug: "Mr-Pig-Heads-on-Over-to-the-Sea-Store", w: 751, h: 1000 },
+    { title: "The Monster Under My Bed", slug: "The-Monster-Under-My-Bed", w: 900, h: 1145 }
   ],
-
-  sketchbook: [
-    { title: "Photo Nov 28 2023, 6 55 59 PM", file: "Photo-Nov-28-2023-6-55-59-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Nov-28-2023-6-55-59-PM.jpg" },
-    { title: "Photo Nov 27 2023, 5 38 25 PM", file: "Photo-Nov-27-2023-5-38-25-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Nov-27-2023-5-38-25-PM.jpg" },
-    { title: "Photo Aug 02 2024, 9 04 06 AM", file: "Photo-Aug-02-2024-9-04-06-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Aug-02-2024-9-04-06-AM.jpg" },
-    { title: "Photo Dec 07 2024, 12 55 34 PM", file: "Photo-Dec-07-2024-12-55-34-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-07-2024-12-55-34-PM.jpg" },
-    { title: "Photo Dec 11 2024, 10 23 46 AM", file: "Photo-Dec-11-2024-10-23-46-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-11-2024-10-23-46-AM.jpg" },
-    { title: "Photo Sep 12 2023, 5 00 36 PM", file: "Photo-Sep-12-2023-5-00-36-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Sep-12-2023-5-00-36-PM.jpg" },
-    { title: "mind 2", file: "mind-2.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/mind-2.png" },
-    { title: "Mind", file: "Mind.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Mind.png" },
-    { title: "Head Split", file: "Head-Split.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/01/Head-Split-378501114-e1737405504743.png" },
-    { title: "Photo Dec 29 2024, 2 11 52 PM", file: "Photo-Dec-29-2024-2-11-52-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-29-2024-2-11-52-PM.jpg" },
-    { title: "Photo Dec 07 2024, 1 02 14 PM", file: "Photo-Dec-07-2024-1-02-14-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-07-2024-1-02-14-PM.jpg" },
-    { title: "Photo Dec 07 2024, 1 01 35 PM", file: "Photo-Dec-07-2024-1-01-35-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-07-2024-1-01-35-PM.jpg" },
-    { title: "Photo Jul 15 2024, 2 42 43 PM", file: "Photo-Jul-15-2024-2-42-43-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jul-15-2024-2-42-43-PM.jpg" },
-    { title: "Photo Dec 11 2024, 9 51 31 PM", file: "Photo-Dec-11-2024-9-51-31-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-11-2024-9-51-31-PM.jpg" },
-    { title: "Gone FIshin'", file: "Gone-Fishin.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/01/Gone-FIshin-3141637338-e1737405558953.png" },
-    { title: "Photo Jun 01 2023, 5 54 14 PM", file: "Photo-Jun-01-2023-5-54-14-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jun-01-2023-5-54-14-PM.jpg" },
-    { title: "Photo Feb 11 2025, 6 42 30 PM", file: "Photo-Feb-11-2025-6-42-30-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Feb-11-2025-6-42-30-PM.jpg" },
-    { title: "Photo Dec 07 2024, 12 55 07 PM", file: "Photo-Dec-07-2024-12-55-07-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Dec-07-2024-12-55-07-PM.jpg" },
-    { title: "Photo Jul 15 2024, 2 42 11 PM", file: "Photo-Jul-15-2024-2-42-11-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jul-15-2024-2-42-11-PM.jpg" },
-    { title: "Severed or Connected", file: "Severed-or-Connected.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/01/Severed-or-Connected-270729605-e1737405630196.png" },
-    { title: "Photo Sep 10 2024, 9 20 59 AM", file: "Photo-Sep-10-2024-9-20-59-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Sep-10-2024-9-20-59-AM.jpg" },
-    { title: "Two People", file: "Two-People.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Two-People.png" },
-    { title: "Photo Jul 31 2023, 11 25 32 AM", file: "Photo-Jul-31-2023-11-25-32-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jul-31-2023-11-25-32-AM.jpg" },
-    { title: "Photo Jun 25 2023, 12 20 55 PM", file: "Photo-Jun-25-2023-12-20-55-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jun-25-2023-12-20-55-PM.jpg" },
-    { title: "Self Portrait", file: "Self-Portrait.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Self-Portrait.png" },
-    { title: "Photo Nov 27 2024, 11 59 47 AM", file: "Photo-Nov-27-2024-11-59-47-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Nov-27-2024-11-59-47-AM.jpg" },
-    { title: "Photo Jul 15 2024, 2 42 31 PM", file: "Photo-Jul-15-2024-2-42-31-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Jul-15-2024-2-42-31-PM.jpg" },
-    { title: "Photo Sep 05 2024, 10 25 52 AM", file: "Photo-Sep-05-2024-10-25-52-AM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Sep-05-2024-10-25-52-AM.jpg" },
-    { title: "cyclops 2", file: "cyclops-2.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/cyclops-2.png" },
-    { title: "aligator man", file: "aligator-man.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/aligator-man.png" },
-    { title: "Photo Feb 24 2025, 8 46 23 PM", file: "Photo-Feb-24-2025-8-46-23-PM.jpg", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Feb-24-2025-8-46-23-PM.jpg" },
-    { title: "Horse", file: "Horse.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Horse.png" }
+  "sketchbook": [
+    { title: "Photo Nov 28 2023, 6 55 59 PM", slug: "Photo-Nov-28-2023-6-55-59-PM", w: 900, h: 1439 },
+    { title: "Photo Nov 27 2023, 5 38 25 PM", slug: "Photo-Nov-27-2023-5-38-25-PM", w: 900, h: 1054 },
+    { title: "Photo Aug 02 2024, 9 04 06 AM", slug: "Photo-Aug-02-2024-9-04-06-AM", w: 900, h: 719 },
+    { title: "Photo Dec 07 2024, 12 55 34 PM", slug: "Photo-Dec-07-2024-12-55-34-PM", w: 900, h: 948 },
+    { title: "Photo Dec 11 2024, 10 23 46 AM", slug: "Photo-Dec-11-2024-10-23-46-AM", w: 900, h: 923 },
+    { title: "Photo Sep 12 2023, 5 00 36 PM", slug: "Photo-Sep-12-2023-5-00-36-PM", w: 900, h: 1397 },
+    { title: "mind 2", slug: "mind-2", w: 900, h: 576 },
+    { title: "Mind", slug: "Mind", w: 900, h: 1447 },
+    { title: "Head Split", slug: "Head-Split", w: 400, h: 633 },
+    { title: "Photo Dec 29 2024, 2 11 52 PM", slug: "Photo-Dec-29-2024-2-11-52-PM", w: 900, h: 938 },
+    { title: "Photo Dec 07 2024, 1 02 14 PM", slug: "Photo-Dec-07-2024-1-02-14-PM", w: 900, h: 1559 },
+    { title: "Photo Dec 07 2024, 1 01 35 PM", slug: "Photo-Dec-07-2024-1-01-35-PM", w: 900, h: 1334 },
+    { title: "Photo Jul 15 2024, 2 42 43 PM", slug: "Photo-Jul-15-2024-2-42-43-PM", w: 900, h: 898 },
+    { title: "Photo Dec 11 2024, 9 51 31 PM", slug: "Photo-Dec-11-2024-9-51-31-PM", w: 900, h: 924 },
+    { title: "Gone FIshin'", slug: "Gone-FIshin", w: 496, h: 505 },
+    { title: "Photo Jun 01 2023, 5 54 14 PM", slug: "Photo-Jun-01-2023-5-54-14-PM", w: 900, h: 654 },
+    { title: "Photo Feb 11 2025, 6 42 30 PM", slug: "Photo-Feb-11-2025-6-42-30-PM", w: 900, h: 913 },
+    { title: "Photo Dec 07 2024, 12 55 07 PM", slug: "Photo-Dec-07-2024-12-55-07-PM", w: 900, h: 981 },
+    { title: "Photo Jul 15 2024, 2 42 11 PM", slug: "Photo-Jul-15-2024-2-42-11-PM", w: 900, h: 892 },
+    { title: "Severed or Connected", slug: "Severed-or-Connected", w: 565, h: 803 },
+    { title: "Photo Sep 10 2024, 9 20 59 AM", slug: "Photo-Sep-10-2024-9-20-59-AM", w: 900, h: 964 },
+    { title: "Two People", slug: "Two-People", w: 400, h: 277 },
+    { title: "Photo Jul 31 2023, 11 25 32 AM", slug: "Photo-Jul-31-2023-11-25-32-AM", w: 900, h: 1211 },
+    { title: "Photo Jun 25 2023, 12 20 55 PM", slug: "Photo-Jun-25-2023-12-20-55-PM", w: 900, h: 932 },
+    { title: "Self Portrait", slug: "Self-Portrait", w: 800, h: 1087 },
+    { title: "Photo Nov 27 2024, 11 59 47 AM", slug: "Photo-Nov-27-2024-11-59-47-AM", w: 900, h: 928 },
+    { title: "Photo Jul 15 2024, 2 42 31 PM", slug: "Photo-Jul-15-2024-2-42-31-PM", w: 900, h: 1071 },
+    { title: "Photo Sep 05 2024, 10 25 52 AM", slug: "Photo-Sep-05-2024-10-25-52-AM", w: 900, h: 899 },
+    { title: "cyclops 2", slug: "cyclops-2", w: 420, h: 335 },
+    { title: "aligator man", slug: "aligator-man", w: 420, h: 335 },
+    { title: "Photo Feb 24 2025, 8 46 23 PM", slug: "Photo-Feb-24-2025-8-46-23-PM", w: 900, h: 305 },
+    { title: "Horse", slug: "Horse", w: 420, h: 335 }
   ],
-
   "fine-art": [
-    { title: "Desires of Earth", file: "Desires-of-Earth.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Desires-of-Earth.png" },
-    { title: "Aquarius", file: "aquarius.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/aquarius.png" },
-    { title: "Bath Time", file: "Bath-Time.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Bath-Time.png" },
-    { title: "Forsyth Fountain", file: "Forsyth-Fountain.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Forsyth-Fountain.png" },
-    { title: "River Street", file: "River-Street.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/River-Street.png" },
-    { title: "SCAD Theater", file: "SCAD-Theater.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/SCAD-Theater.png" }
-  ],
-
-  // Not a gallery — the logo and the About portrait. Kept here so the
-  // download script picks them up alongside everything else.
-  site: [
-    { title: "Planetary Meeting", file: "logo.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/01/cropped-Untitled_Artwork-1-e1737514381184.png" },
-    { title: "Livia Burkhardt", file: "portrait.png", src: "https://planetarymeeting.com/wp-content/uploads/2025/02/Photo-Aug-27-2024-4-59-04-PM-e1740450788794.png" }
+    { title: "Desires of Earth", slug: "Desires-of-Earth", w: 780, h: 1080 },
+    { title: "Aquarius", slug: "Aquarius", w: 900, h: 562 },
+    { title: "Bath Time", slug: "Bath-Time", w: 900, h: 704 },
+    { title: "Forsyth Fountain", slug: "Forsyth-Fountain", w: 900, h: 1125 },
+    { title: "River Street", slug: "River-Street", w: 900, h: 1125 },
+    { title: "SCAD Theater", slug: "SCAD-Theater", w: 900, h: 1125 }
   ]
 };
