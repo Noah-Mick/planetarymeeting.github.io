@@ -13,9 +13,9 @@
  */
 window.ARTWORK = {
   "illustration": [
+    { title: "August", slug: "August", w: 900, h: 573 },
     { title: "A Day Spent Outside", slug: "A-Day-Spent-Outside", w: 900, h: 899 },
     { title: "Another Jar for my Things", slug: "Another-Jar-for-my-Things", w: 800, h: 960 },
-    { title: "August", slug: "August", w: 900, h: 573 },
     { title: "CYCLOPS RED", slug: "CYCLOPS-RED", w: 419, h: 464 },
     { title: "CYCLOPS WHITE", slug: "CYCLOPS-WHITE", w: 390, h: 422 },
     { title: "For What It's Worth", slug: "For-What-Its-Worth", w: 900, h: 1273 },
@@ -32,7 +32,11 @@ window.ARTWORK = {
     { title: "The Monster Under My Bed", slug: "The-Monster-Under-My-Bed", w: 900, h: 1145 },
     { title: "What More is There to Do", slug: "What-More-is-There-to-Do", w: 900, h: 1200 },
     { title: "What's in your Palette", slug: "Whats-in-your-Palette", w: 900, h: 491 },
-    { title: "CYCLOPS ROSE", slug: "CYCLOPS-ROSE", w: 407, h: 457 }
+    { title: "CYCLOPS ROSE", slug: "CYCLOPS-ROSE", w: 407, h: 457 },
+    { title: "July", slug: "July", w: 900, h: 573 },
+    { title: "October", slug: "October", w: 900, h: 573 },
+    { title: "Breakfast_Time", slug: "Breakfast-Time", w: 900, h: 900 },
+    { title: "Friends_In_Fall", slug: "Friends-In-Fall", w: 900, h: 900 }
   ],
   "sketchbook": [
     { title: "Gone FIshin'", slug: "Gone-FIshin", w: 900, h: 457 },
