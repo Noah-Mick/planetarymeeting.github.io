@@ -1,519 +1,766 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-14T18:08:09.358Z",
+  "generatedAt": "2026-08-18T00:22:00.286Z",
   "files": {
-    "local:illustration/A-Day-Spent-Outside.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/A-Day-Spent-Outside.png",
-      "ext": ".png",
-      "title": "A Day Spent Outside",
-      "order": 1,
-      "modified": "2026-08-14T13:36:06.189Z"
-    },
-    "local:illustration/Another-Jar-for-my-Things.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Another-Jar-for-my-Things.png",
-      "ext": ".png",
-      "title": "Another Jar for my Things",
-      "order": 17,
-      "modified": "2026-08-14T13:36:10.311Z"
-    },
-    "local:illustration/CYCLOPS-RED.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/CYCLOPS-RED.png",
-      "ext": ".png",
-      "title": "CYCLOPS RED",
-      "order": 10,
-      "modified": "2026-08-14T13:36:08.523Z"
-    },
-    "local:illustration/CYCLOPS-ROSE.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/CYCLOPS-ROSE.png",
-      "ext": ".png",
-      "title": "CYCLOPS ROSÈ",
-      "order": 8,
-      "modified": "2026-08-14T13:36:08.376Z"
-    },
-    "local:illustration/CYCLOPS-WHITE.jpg": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/CYCLOPS-WHITE.jpg",
-      "ext": ".jpg",
-      "title": "CYCLOPS WHITE",
-      "order": 9,
-      "modified": "2026-08-14T13:36:08.471Z"
-    },
-    "local:illustration/For-What-Its-Worth.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/For-What-Its-Worth.png",
-      "ext": ".png",
-      "title": "For What It's Worth",
-      "order": 6,
-      "modified": "2026-08-14T13:36:07.975Z"
-    },
-    "local:illustration/Heinz-Endelmann-Inspired-Tame-Impala-Poster.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Heinz-Endelmann-Inspired-Tame-Impala-Poster.png",
-      "ext": ".png",
-      "title": "Heinz Endelmann Inspired Tame Impala Poster",
-      "order": 16,
-      "modified": "2026-08-14T13:36:09.947Z"
-    },
-    "local:illustration/In-a-Forest.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/In-a-Forest.png",
-      "ext": ".png",
-      "title": "In a Forest",
-      "order": 5,
-      "modified": "2026-08-14T13:36:07.737Z"
-    },
-    "local:illustration/Java-Burrito-Company-Illustration.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Java-Burrito-Company-Illustration.png",
-      "ext": ".png",
-      "title": "Java Burrito Company Illustration",
-      "order": 14,
-      "modified": "2026-08-14T13:36:09.673Z"
-    },
-    "local:illustration/Mr-Pig-Heads-on-Over-to-the-Sea-Store.jpg": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Mr-Pig-Heads-on-Over-to-the-Sea-Store.jpg",
-      "ext": ".jpg",
-      "title": "Mr. Pig Heads on Over to the Sea Store",
-      "order": 18,
-      "modified": "2026-08-14T13:36:10.418Z"
-    },
-    "local:illustration/Snow-Dogs.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Snow-Dogs.png",
-      "ext": ".png",
-      "title": "Snow Dogs",
-      "order": 4,
-      "modified": "2026-08-14T13:36:07.355Z"
-    },
-    "local:illustration/The-Alchemist-Book-Cover-Mockup.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/The-Alchemist-Book-Cover-Mockup.png",
-      "ext": ".png",
-      "title": "The Alchemist Book Cover Mockup",
-      "order": 15,
-      "modified": "2026-08-14T13:36:09.857Z"
-    },
-    "local:illustration/The-End-Of-Snow-Days.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/The-End-Of-Snow-Days.png",
-      "ext": ".png",
-      "title": "The End Of Snow Days",
-      "order": 11,
-      "modified": "2026-08-14T13:36:08.994Z"
-    },
-    "local:illustration/The-Library-Bathroom-Double-Page-Spread.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/The-Library-Bathroom-Double-Page-Spread.png",
-      "ext": ".png",
-      "title": "The Library Bathroom Double Page Spread",
-      "order": 13,
-      "modified": "2026-08-14T13:36:09.578Z"
-    },
-    "local:illustration/The-Library-Bathroom.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/The-Library-Bathroom.png",
-      "ext": ".png",
-      "title": "The Library Bathroom",
-      "order": 12,
-      "modified": "2026-08-14T13:36:09.112Z"
-    },
-    "local:illustration/The-Monster-Under-My-Bed.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/The-Monster-Under-My-Bed.png",
-      "ext": ".png",
-      "title": "The Monster Under My Bed",
-      "order": 19,
-      "modified": "2026-08-14T13:36:10.929Z"
-    },
-    "local:illustration/What-More-is-There-to-Do.jpg": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/What-More-is-There-to-Do.jpg",
-      "ext": ".jpg",
-      "title": "What More is There to Do",
-      "order": 2,
-      "modified": "2026-08-14T13:36:06.647Z"
-    },
-    "local:illustration/Whats-in-your-Palette.png": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Whats-in-your-Palette.png",
-      "ext": ".png",
-      "title": "What's in your Palette",
-      "order": 3,
-      "modified": "2026-08-14T13:36:07.197Z"
-    },
-    "local:illustration/Wrapped-in-The-Wave.jpg": {
-      "source": "local",
-      "group": "illustration",
-      "path": "images/illustration/Wrapped-in-The-Wave.jpg",
-      "ext": ".jpg",
-      "title": "Wrapped in The Wave",
-      "order": 7,
-      "modified": "2026-08-14T13:36:08.325Z"
-    },
-    "local:sketchbook/aligator-man.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/aligator-man.png",
-      "ext": ".png",
-      "title": "aligator man",
-      "order": 30,
-      "modified": "2026-08-14T13:36:17.581Z"
-    },
-    "local:sketchbook/cyclops-2.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/cyclops-2.png",
-      "ext": ".png",
-      "title": "cyclops 2",
-      "order": 29,
-      "modified": "2026-08-14T13:36:17.520Z"
-    },
-    "local:sketchbook/Gone-Fishin.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Gone-Fishin.png",
-      "ext": ".png",
-      "title": "Gone FIshin'",
-      "order": 15,
-      "modified": "2026-08-14T13:36:14.567Z"
-    },
-    "local:sketchbook/Head-Split.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Head-Split.png",
-      "ext": ".png",
-      "title": "Head Split",
-      "order": 9,
-      "modified": "2026-08-14T13:36:13.140Z"
-    },
-    "local:sketchbook/Horse.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Horse.png",
-      "ext": ".png",
-      "title": "Horse",
-      "order": 32,
-      "modified": "2025-02-25T00:29:56.309Z"
-    },
-    "local:sketchbook/mind-2.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/mind-2.png",
-      "ext": ".png",
-      "title": "mind 2",
-      "order": 7,
-      "modified": "2026-08-14T13:36:12.701Z"
-    },
-    "local:sketchbook/Mind.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Mind.png",
-      "ext": ".png",
-      "title": "Mind",
-      "order": 8,
-      "modified": "2025-01-20T18:23:46.711Z"
-    },
-    "local:sketchbook/Photo-Aug-02-2024-9-04-06-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Aug-02-2024-9-04-06-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Aug 02 2024, 9 04 06 AM",
-      "order": 3,
-      "modified": "2026-08-14T13:36:11.441Z"
-    },
-    "local:sketchbook/Photo-Dec-07-2024-1-01-35-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-07-2024-1-01-35-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 07 2024, 1 01 35 PM",
-      "order": 12,
-      "modified": "2026-08-14T13:36:13.641Z"
-    },
-    "local:sketchbook/Photo-Dec-07-2024-1-02-14-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-07-2024-1-02-14-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 07 2024, 1 02 14 PM",
-      "order": 11,
-      "modified": "2026-08-14T13:36:13.534Z"
-    },
-    "local:sketchbook/Photo-Dec-07-2024-12-55-07-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-07-2024-12-55-07-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 07 2024, 12 55 07 PM",
-      "order": 18,
-      "modified": "2026-08-14T13:36:15.149Z"
-    },
-    "local:sketchbook/Photo-Dec-07-2024-12-55-34-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-07-2024-12-55-34-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 07 2024, 12 55 34 PM",
-      "order": 4,
-      "modified": "2026-08-14T13:36:11.860Z"
-    },
-    "local:sketchbook/Photo-Dec-11-2024-10-23-46-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-11-2024-10-23-46-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 11 2024, 10 23 46 AM",
-      "order": 5,
-      "modified": "2026-08-14T13:36:11.940Z"
-    },
-    "local:sketchbook/Photo-Dec-11-2024-9-51-31-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-11-2024-9-51-31-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 11 2024, 9 51 31 PM",
-      "order": 14,
-      "modified": "2026-08-14T13:36:14.272Z"
-    },
-    "local:sketchbook/Photo-Dec-29-2024-2-11-52-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Dec-29-2024-2-11-52-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Dec 29 2024, 2 11 52 PM",
-      "order": 10,
-      "modified": "2026-08-14T13:36:13.303Z"
-    },
-    "local:sketchbook/Photo-Feb-11-2025-6-42-30-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Feb-11-2025-6-42-30-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Feb 11 2025, 6 42 30 PM",
-      "order": 17,
-      "modified": "2026-08-14T13:36:15.067Z"
-    },
-    "local:sketchbook/Photo-Feb-24-2025-8-46-23-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Feb-24-2025-8-46-23-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Feb 24 2025, 8 46 23 PM",
-      "order": 31,
-      "modified": "2026-08-14T13:36:17.872Z"
-    },
-    "local:sketchbook/Photo-Jul-15-2024-2-42-11-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-11-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jul 15 2024, 2 42 11 PM",
-      "order": 19,
-      "modified": "2026-08-14T13:36:15.285Z"
-    },
-    "local:sketchbook/Photo-Jul-15-2024-2-42-31-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-31-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jul 15 2024, 2 42 31 PM",
-      "order": 27,
-      "modified": "2026-08-14T13:36:17.291Z"
-    },
-    "local:sketchbook/Photo-Jul-15-2024-2-42-43-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jul-15-2024-2-42-43-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jul 15 2024, 2 42 43 PM",
-      "order": 13,
-      "modified": "2026-08-14T13:36:14.173Z"
-    },
-    "local:sketchbook/Photo-Jul-31-2023-11-25-32-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jul-31-2023-11-25-32-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jul 31 2023, 11 25 32 AM",
-      "order": 23,
-      "modified": "2026-08-14T13:36:16.320Z"
-    },
-    "local:sketchbook/Photo-Jun-01-2023-5-54-14-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jun-01-2023-5-54-14-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jun 01 2023, 5 54 14 PM",
-      "order": 16,
-      "modified": "2026-08-14T13:36:14.732Z"
-    },
-    "local:sketchbook/Photo-Jun-25-2023-12-20-55-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Jun-25-2023-12-20-55-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Jun 25 2023, 12 20 55 PM",
-      "order": 24,
-      "modified": "2026-08-14T13:36:16.426Z"
-    },
-    "local:sketchbook/Photo-Nov-27-2023-5-38-25-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Nov-27-2023-5-38-25-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Nov 27 2023, 5 38 25 PM",
-      "order": 2,
-      "modified": "2026-08-14T13:36:11.362Z"
-    },
-    "local:sketchbook/Photo-Nov-27-2024-11-59-47-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Nov-27-2024-11-59-47-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Nov 27 2024, 11 59 47 AM",
-      "order": 26,
-      "modified": "2026-08-14T13:36:16.779Z"
-    },
-    "local:sketchbook/Photo-Nov-28-2023-6-55-59-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Nov-28-2023-6-55-59-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Nov 28 2023, 6 55 59 PM",
-      "order": 1,
-      "modified": "2026-08-14T13:36:11.081Z"
-    },
-    "local:sketchbook/Photo-Sep-05-2024-10-25-52-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Sep-05-2024-10-25-52-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Sep 05 2024, 10 25 52 AM",
-      "order": 28,
-      "modified": "2026-08-14T13:36:17.376Z"
-    },
-    "local:sketchbook/Photo-Sep-10-2024-9-20-59-AM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Sep-10-2024-9-20-59-AM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Sep 10 2024, 9 20 59 AM",
-      "order": 21,
-      "modified": "2026-08-14T13:36:15.648Z"
-    },
-    "local:sketchbook/Photo-Sep-12-2023-5-00-36-PM.jpg": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Photo-Sep-12-2023-5-00-36-PM.jpg",
-      "ext": ".jpg",
-      "title": "Photo Sep 12 2023, 5 00 36 PM",
-      "order": 6,
-      "modified": "2026-08-14T13:36:12.583Z"
-    },
-    "local:sketchbook/Self-Portrait.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Self-Portrait.png",
-      "ext": ".png",
-      "title": "Self Portrait",
-      "order": 25,
-      "modified": "2026-08-14T13:36:16.667Z"
-    },
-    "local:sketchbook/Severed-or-Connected.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Severed-or-Connected.png",
-      "ext": ".png",
-      "title": "Severed or Connected",
-      "order": 20,
-      "modified": "2026-08-14T13:36:15.358Z"
-    },
-    "local:sketchbook/Two-People.png": {
-      "source": "local",
-      "group": "sketchbook",
-      "path": "images/sketchbook/Two-People.png",
-      "ext": ".png",
-      "title": "Two People",
-      "order": 22,
-      "modified": "2026-08-14T13:36:15.708Z"
-    },
-    "local:fine-art/aquarius.png": {
-      "source": "local",
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAKw": {
+      "source": "dropbox",
       "group": "fine-art",
-      "path": "images/fine-art/aquarius.png",
-      "ext": ".png",
-      "title": "Aquarius",
-      "order": 2,
-      "modified": "2026-08-14T13:36:18.369Z"
-    },
-    "local:fine-art/Bath-Time.png": {
-      "source": "local",
-      "group": "fine-art",
-      "path": "images/fine-art/Bath-Time.png",
+      "name": "Bath Time.png",
+      "rev": "01659330118c2230000000379030b33",
       "ext": ".png",
       "title": "Bath Time",
-      "order": 3,
-      "modified": "2026-08-14T13:36:20.219Z"
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
     },
-    "local:fine-art/Desires-of-Earth.png": {
-      "source": "local",
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAHw": {
+      "source": "dropbox",
       "group": "fine-art",
-      "path": "images/fine-art/Desires-of-Earth.png",
+      "name": "Desires of Earth.png",
+      "rev": "01659330118c2240000000379030b33",
       "ext": ".png",
       "title": "Desires of Earth",
-      "order": 1,
-      "modified": "2026-08-14T13:36:18.002Z"
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
     },
-    "local:fine-art/Forsyth-Fountain.png": {
-      "source": "local",
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAKQ": {
+      "source": "dropbox",
       "group": "fine-art",
-      "path": "images/fine-art/Forsyth-Fountain.png",
+      "name": "Forsyth Fountain.png",
+      "rev": "01659330118c2250000000379030b33",
       "ext": ".png",
       "title": "Forsyth Fountain",
-      "order": 4,
-      "modified": "2026-08-14T13:36:20.503Z"
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
     },
-    "local:fine-art/River-Street.png": {
-      "source": "local",
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAKg": {
+      "source": "dropbox",
       "group": "fine-art",
-      "path": "images/fine-art/River-Street.png",
+      "name": "River Street.png",
+      "rev": "01659330118c2260000000379030b33",
       "ext": ".png",
       "title": "River Street",
-      "order": 5,
-      "modified": "2026-08-14T13:36:20.599Z"
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
     },
-    "local:fine-art/SCAD-Theater.png": {
-      "source": "local",
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAHg": {
+      "source": "dropbox",
       "group": "fine-art",
-      "path": "images/fine-art/SCAD-Theater.png",
+      "name": "SCAD Theater.png",
+      "rev": "01659330118c2270000000379030b33",
       "ext": ".png",
       "title": "SCAD Theater",
-      "order": 6,
-      "modified": "2026-08-14T13:36:20.729Z"
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAFg": {
+      "source": "dropbox",
+      "group": "fine-art",
+      "name": "aquarius.png",
+      "rev": "01659330118c2280000000379030b33",
+      "ext": ".png",
+      "title": "aquarius",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAFw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "A Day Spent Outside.png",
+      "rev": "01659330118c2290000000379030b33",
+      "ext": ".png",
+      "title": "A Day Spent Outside",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAIg": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "Another Jar for my Things.png",
+      "rev": "01659330118c22a0000000379030b33",
+      "ext": ".png",
+      "title": "Another Jar for my Things",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAGw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "August.jpg",
+      "rev": "01659330118c22b0000000379030b33",
+      "ext": ".jpg",
+      "title": "August",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAACw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "CYCLOPS RED.png",
+      "rev": "01659330118c22c0000000379030b33",
+      "ext": ".png",
+      "title": "CYCLOPS RED",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAADg": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "CYCLOPS WHITE.jpg",
+      "rev": "01659330118c22e0000000379030b33",
+      "ext": ".jpg",
+      "title": "CYCLOPS WHITE",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAEg": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "For What It's Worth.png",
+      "rev": "01659330118c22f0000000379030b33",
+      "ext": ".png",
+      "title": "For What It's Worth",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAGQ": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "Heinz Endelmann Inspired Tame Impala Poster.png",
+      "rev": "01659330118c2300000000379030b33",
+      "ext": ".png",
+      "title": "Heinz Endelmann Inspired Tame Impala Poster",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAACQ": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "In a Forest.png",
+      "rev": "01659330118c2310000000379030b33",
+      "ext": ".png",
+      "title": "In a Forest",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAIw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "Java Burrito Company Illustration.png",
+      "rev": "01659330118c2320000000379030b33",
+      "ext": ".png",
+      "title": "Java Burrito Company Illustration",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAFA": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "Mr. Pig Heads on Over to the Sea Store.jpg",
+      "rev": "01659330118c2330000000379030b33",
+      "ext": ".jpg",
+      "title": "Mr. Pig Heads on Over to the Sea Store",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAHA": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "Snow Dogs.png",
+      "rev": "01659330118c2340000000379030b33",
+      "ext": ".png",
+      "title": "Snow Dogs",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAHQ": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The Alchemist Book Cover Mockup.png",
+      "rev": "01659330118c2350000000379030b33",
+      "ext": ".png",
+      "title": "The Alchemist Book Cover Mockup",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAALA": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The Alchemist Book Cover.png",
+      "rev": "01659330118c2360000000379030b33",
+      "ext": ".png",
+      "title": "The Alchemist Book Cover",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAADw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The End Of Snow Days.png",
+      "rev": "01659330118c2370000000379030b33",
+      "ext": ".png",
+      "title": "The End Of Snow Days",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAALQ": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The Library Bathroom Double Page Spread.png",
+      "rev": "01659330118c2380000000379030b33",
+      "ext": ".png",
+      "title": "The Library Bathroom Double Page Spread",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAJg": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The Library Bathroom.png",
+      "rev": "01659330118c2390000000379030b33",
+      "ext": ".png",
+      "title": "The Library Bathroom",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAEw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "The Monster Under My Bed.png",
+      "rev": "01659330118c23a0000000379030b33",
+      "ext": ".png",
+      "title": "The Monster Under My Bed",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAJw": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "What More is There to Do.jpg",
+      "rev": "01659330118c23b0000000379030b33",
+      "ext": ".jpg",
+      "title": "What More is There to Do",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAGA": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "What's in your Palette.png",
+      "rev": "01659330118c23c0000000379030b33",
+      "ext": ".png",
+      "title": "What's in your Palette",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAADQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Gone FIshin'.png",
+      "rev": "01659330118c23d0000000379030b33",
+      "ext": ".png",
+      "title": "Gone FIshin'",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAGg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Head Split.png",
+      "rev": "01659330118c23e0000000379030b33",
+      "ext": ".png",
+      "title": "Head Split",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAADA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Horse.png",
+      "rev": "01659330118c23f0000000379030b33",
+      "ext": ".png",
+      "title": "Horse",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAJA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Man in the Box.png",
+      "rev": "01659330118c2400000000379030b33",
+      "ext": ".png",
+      "title": "Man in the Box",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAALg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Mind.png",
+      "rev": "01659330118c2410000000379030b33",
+      "ext": ".png",
+      "title": "Mind",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAALw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Apr 22 2024, 5 02 44 PM.jpg",
+      "rev": "01659330118c2420000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Apr 22 2024, 5 02 44 PM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAMw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Aug 02 2024, 9 04 06 AM.jpg",
+      "rev": "01659330118c2430000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Aug 02 2024, 9 04 06 AM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAMQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 07 2024, 1 01 35 PM.jpg",
+      "rev": "01659330118c2440000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 1 01 35 PM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAANA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 07 2024, 1 02 14 PM.jpg",
+      "rev": "01659330118c2450000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 1 02 14 PM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAMA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 07 2024, 12 55 07 PM.jpg",
+      "rev": "01659330118c2460000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 12 55 07 PM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAANQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 07 2024, 12 55 34 PM.jpg",
+      "rev": "01659330118c2470000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 07 2024, 12 55 34 PM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAMg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 11 2024, 10 23 46 AM.jpg",
+      "rev": "01659330118c2480000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 11 2024, 10 23 46 AM",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAACg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "aligator man.png",
+      "rev": "01659330118c2490000000379030b33",
+      "ext": ".png",
+      "title": "aligator man",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAEA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "behind a door.png",
+      "rev": "01659330118c24a0000000379030b33",
+      "ext": ".png",
+      "title": "behind a door",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAKA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "big head.png",
+      "rev": "01659330118c24b0000000379030b33",
+      "ext": ".png",
+      "title": "big head",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAJQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "cyclops 2.png",
+      "rev": "01659330118c24c0000000379030b33",
+      "ext": ".png",
+      "title": "cyclops 2",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAIQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "cyclops.png",
+      "rev": "01659330118c24d0000000379030b33",
+      "ext": ".png",
+      "title": "cyclops",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAIA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "flamingo.png",
+      "rev": "01659330118c24e0000000379030b33",
+      "ext": ".png",
+      "title": "flamingo",
+      "order": null,
+      "modified": "2026-08-17T00:10:56Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAQA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 11 2024, 9 51 31 PM.jpg",
+      "rev": "0165933016437bd0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 11 2024, 9 51 31 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAASA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jul 15 2024, 2 42 31 PM.jpg",
+      "rev": "0165933016437be0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 31 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAANw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jul 15 2024, 2 42 43 PM.jpg",
+      "rev": "0165933016437bf0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 43 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAQw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jul 31 2023, 11 25 32 AM.jpg",
+      "rev": "0165933016437c00000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jul 31 2023, 11 25 32 AM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAATg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jun 01 2023, 5 54 14 PM.jpg",
+      "rev": "0165933016437c10000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jun 01 2023, 5 54 14 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAASw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jun 25 2023, 12 20 55 PM.jpg",
+      "rev": "0165933016437c20000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jun 25 2023, 12 20 55 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAATQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Sep 10 2024, 9 20 59 AM.jpg",
+      "rev": "0165933016437c30000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Sep 10 2024, 9 20 59 AM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAQg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Sep 12 2023, 5 00 36 PM.jpg",
+      "rev": "0165933016437c40000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Sep 12 2023, 5 00 36 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAATA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Swirly Sunset.png",
+      "rev": "0165933016437c50000000379030b33",
+      "ext": ".png",
+      "title": "Swirly Sunset",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAFQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Two People.png",
+      "rev": "0165933016437c60000000379030b33",
+      "ext": ".png",
+      "title": "Two People",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAARw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "limbo.png",
+      "rev": "0165933016437c70000000379030b33",
+      "ext": ".png",
+      "title": "limbo",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAASg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "mind 2.png",
+      "rev": "0165933016437c80000000379030b33",
+      "ext": ".png",
+      "title": "mind 2",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAARQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "mind 3.png",
+      "rev": "0165933016437c90000000379030b33",
+      "ext": ".png",
+      "title": "mind 3",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAOQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "palm.png",
+      "rev": "0165933016437ca0000000379030b33",
+      "ext": ".png",
+      "title": "palm",
+      "order": null,
+      "modified": "2026-08-17T00:11:01Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAPw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Dec 29 2024, 2 11 52 PM.jpg",
+      "rev": "01659330178c62a0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Dec 29 2024, 2 11 52 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAPA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Feb 11 2025, 6 42 30 PM.jpg",
+      "rev": "01659330178c62b0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Feb 11 2025, 6 42 30 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAANg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Feb 24 2025, 8 46 23 PM.jpg",
+      "rev": "01659330178c62c0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Feb 24 2025, 8 46 23 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAOg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Jul 15 2024, 2 42 11 PM.jpg",
+      "rev": "01659330178c62d0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Jul 15 2024, 2 42 11 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAOw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Nov 27 2023, 5 38 25 PM.jpg",
+      "rev": "01659330178c62e0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Nov 27 2023, 5 38 25 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAQQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Nov 27 2024, 11 59 47 AM.jpg",
+      "rev": "01659330178c62f0000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Nov 27 2024, 11 59 47 AM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAASQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Nov 28 2023, 6 55 59 PM.jpg",
+      "rev": "01659330178c6300000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Nov 28 2023, 6 55 59 PM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAATw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Photo Sep 05 2024, 10 25 52 AM.jpg",
+      "rev": "01659330178c6310000000379030b33",
+      "ext": ".jpg",
+      "title": "Photo Sep 05 2024, 10 25 52 AM",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAPQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Self Portrait.png",
+      "rev": "01659330178c6320000000379030b33",
+      "ext": ".png",
+      "title": "Self Portrait",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAPg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Severed or Connected.png",
+      "rev": "01659330178c6330000000379030b33",
+      "ext": ".png",
+      "title": "Severed or Connected",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAARg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "Unrequited Love.png",
+      "rev": "01659330178c6340000000379030b33",
+      "ext": ".png",
+      "title": "Unrequited Love",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAARA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "me or you.png",
+      "rev": "01659330178c6350000000379030b33",
+      "ext": ".png",
+      "title": "me or you",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAOA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "out of the trash.png",
+      "rev": "01659330178c6360000000379030b33",
+      "ext": ".png",
+      "title": "out of the trash",
+      "order": null,
+      "modified": "2026-08-17T00:11:03Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAVg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "snapping limbs.png",
+      "rev": "016593301bc4e5a0000000379030b33",
+      "ext": ".png",
+      "title": "snapping limbs",
+      "order": null,
+      "modified": "2026-08-17T00:11:07Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAWg": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "space.png",
+      "rev": "016593301bc4e5b0000000379030b33",
+      "ext": ".png",
+      "title": "space",
+      "order": null,
+      "modified": "2026-08-17T00:11:07Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAVw": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "twisted.png",
+      "rev": "016593301bc4e5c0000000379030b33",
+      "ext": ".png",
+      "title": "twisted",
+      "order": null,
+      "modified": "2026-08-17T00:11:07Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAWA": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "us.png",
+      "rev": "016593301bc4e5d0000000379030b33",
+      "ext": ".png",
+      "title": "us",
+      "order": null,
+      "modified": "2026-08-17T00:11:07Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAWQ": {
+      "source": "dropbox",
+      "group": "sketchbook",
+      "name": "your picture.png",
+      "rev": "016593301bc4e5e0000000379030b33",
+      "ext": ".png",
+      "title": "your picture",
+      "order": null,
+      "modified": "2026-08-17T00:11:07Z"
+    },
+    "dropbox:id:IVkORwZkwmcAAAAAAAAAEQ": {
+      "source": "dropbox",
+      "group": "illustration",
+      "name": "CYCLOPS ROSE.png",
+      "rev": "01659330fbab6710000000379030b33",
+      "ext": ".png",
+      "title": "CYCLOPS ROSE",
+      "order": null,
+      "modified": "2026-08-17T00:15:02Z"
     }
   }
 }
